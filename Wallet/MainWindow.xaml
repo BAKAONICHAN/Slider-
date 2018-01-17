@@ -1,0 +1,21 @@
+﻿<Window x:Class="Wallet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+
+        <Slider x:Name="Halyk" Value="0" Minimum="0" Maximum="14000" ValueChanged="Halyk_ValueChanged" IsSelectionRangeEnabled="True" SelectionStart="0" SelectionEnd="14000" HorizontalAlignment="Left" Margin="170,135,0,0" VerticalAlignment="Top" Width="296"/>
+        <Slider x:Name="bitcoin" Value="0" Minimum="0" Maximum="18000"  ValueChanged="Bitcoin_ValueChanged" IsSelectionRangeEnabled="True" SelectionStart="0" SelectionEnd="18000" HorizontalAlignment="Left" Margin="170,191,0,0" VerticalAlignment="Top" Width="296"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,75,0,0" TextWrapping="Wrap" Text="Payed" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,135,0,0" TextWrapping="Wrap" Text="Halyk Bank" VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,195,0,0" TextWrapping="Wrap" Text="Bitcoin Wallet " VerticalAlignment="Top" Width="55"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,75,0,0" TextWrapping="Wrap" Text="30000" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="117,137,0,0" TextWrapping="Wrap" Text="14000" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,195,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top"/>
+        <ProgressBar Name="Payed" Value="0" Maximum="50000" HorizontalAlignment="Left" Height="16" Margin="177,75,0,0" VerticalAlignment="Top" Width="289"/>
+    </Grid>
+</Window>
